@@ -23,11 +23,11 @@ function App() {
 export default App
 
 const Page = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 100%;
   background-color: #0A1121;
-  background-image: url(https://us.123rf.com/450wm/lisaalisaill/lisaalisaill1801/lisaalisaill180100074/93164954-starry-sky-seamless-pattern-dots-in-galaxy-and-stars-style-endless-background-galaxy-background-of-s.jpg?ver=6)
+  background-image: url(https://us.123rf.com/450wm/lisaalisaill/lisaalisaill1801/lisaalisaill180100074/93164954-starry-sky-seamless-pattern-dots-in-galaxy-and-stars-style-endless-background-galaxy-background-of-s.jpg?ver=6);
 `
 
 const Header = styled.section`
