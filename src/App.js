@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Peoples from './scenes/people'
+import Peoples from './people'
 import { LogoStarWars } from './components/LogoStarWars'
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
       <Content>
         <Peoples/>
       </Content>
-
 
     </Page>
   )
