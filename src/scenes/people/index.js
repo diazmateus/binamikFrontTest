@@ -264,32 +264,55 @@ export default function Peoples() {
     <S.Container>
 
       {data.map((people, index) => {
+          const splitId = people.url.replace('http://swapi.dev/api/people/', '').replace('/', '')
 
           return (
             <Box key={index}>
+              <S.Image src={`https://starwars-visualguide.com/assets/img/characters/${splitId}.jpg`}/>
 
-              <S.Title>{people.name}</S.Title>
+              <S.Data>
+                <S.Title>{people.name}</S.Title>
+                <S.Row>
+                  <S.Info>
+                    <S.Attribute>Genre:</S.Attribute>
+                    <S.Value>{people.gender}</S.Value>
+                  </S.Info>
 
-              <S.Row>
-                <S.Info>
-                  <S.Attribute>Genre:</S.Attribute>
-                  <S.Value>{people.gender}</S.Value>
-                </S.Info>
+                  <S.Info>
+                    <S.Attribute>Height:</S.Attribute>
+                    <S.Value>{people.height}</S.Value>
+                  </S.Info>
 
-                <S.Info>
-                  <S.Attribute>Height:</S.Attribute>
-                  <S.Value>{people.height}</S.Value>
-                </S.Info>
+                  <S.Info>
+                    <S.Attribute>Mass:</S.Attribute>
+                    <S.Value>{people.mass}</S.Value>
+                  </S.Info>
 
-                <S.Info>
-                  <S.Attribute>Mass:</S.Attribute>
-                  <S.Value>{people.mass}</S.Value>
-                </S.Info>
+                  <S.Info>
+                    <S.Attribute>Birth Year:</S.Attribute>
+                    <S.Value>{people.birth_year}</S.Value>
+                  </S.Info>
+                </S.Row>
 
+                <S.Row>
+                  <S.Info>
+                    <S.Attribute>Hair Color:</S.Attribute>
+                    <S.Value>{people.hair_color}</S.Value>
+                  </S.Info>
 
-              </S.Row>
+                  <S.Info>
+                    <S.Attribute>Skin Color:</S.Attribute>
+                    <S.Value>{people.skin_color}</S.Value>
+                  </S.Info>
 
+                  <S.Info>
+                    <S.Attribute>Eye Color:</S.Attribute>
+                    <S.Value>{people.eye_color}</S.Value>
+                  </S.Info>
 
+                </S.Row>
+
+              </S.Data>
             </Box>)
         }
       )}

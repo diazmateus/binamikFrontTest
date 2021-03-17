@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Peoples from './scenes/people'
-import { Logo } from './components/Logo'
 import { LogoStarWars } from './components/LogoStarWars'
 
 function App() {
