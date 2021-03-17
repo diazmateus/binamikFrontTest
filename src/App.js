@@ -36,5 +36,5 @@ const Header = styled.section`
 `
 
 const Content = styled.div`
-  padding: 32px
+  padding: 16px
 `

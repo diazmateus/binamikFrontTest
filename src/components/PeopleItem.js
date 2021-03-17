@@ -10,45 +10,26 @@ export const PeopleItem = (people = {}, index) => {
 
       <Data>
         <Title>{people.name}</Title>
-        <Row>
-          <Info>
-            <Attribute>Genre:</Attribute>
-            <Value>{people.gender}</Value>
-          </Info>
 
-          <Info>
-            <Attribute>Height:</Attribute>
-            <Value>{people.height}</Value>
-          </Info>
+        <Attribute>
+          <strong>Genre:</strong>
+          {people.gender}
+        </Attribute>
 
-          <Info>
-            <Attribute>Mass:</Attribute>
-            <Value>{people.mass}</Value>
-          </Info>
+        <Attribute>
+          <strong>Height:</strong>
+          {people.height}
+        </Attribute>
 
-          <Info>
-            <Attribute>Birth Year:</Attribute>
-            <Value>{people.birth_year}</Value>
-          </Info>
-        </Row>
+        <Attribute>
+          <strong>Mass:</strong>
+          {people.mass}
+        </Attribute>
 
-        <Row>
-          <Info>
-            <Attribute>Hair Color:</Attribute>
-            <Value>{people.hair_color}</Value>
-          </Info>
-
-          <Info>
-            <Attribute>Skin Color:</Attribute>
-            <Value>{people.skin_color}</Value>
-          </Info>
-
-          <Info>
-            <Attribute>Eye Color:</Attribute>
-            <Value>{people.eye_color}</Value>
-          </Info>
-
-        </Row>
+        <Attribute>
+          <strong>Birth Year:</strong>
+          {people.birth_year}
+        </Attribute>
 
       </Data>
     </Box>)
@@ -56,37 +37,30 @@ export const PeopleItem = (people = {}, index) => {
 
 
 const Image = styled.img`
-  height: 148px;
-  border-radius: 0 0 0 4px;
+  width: 100%;
+  max-height: 350px;
+  border-radius: 4px 4px 0 0;
+  object-fit: cover;
 `
 
 const Data = styled.div`
-  width: 100%;
+  padding: 16px;
 `
 
 const Title = styled.span`
   font-size: 1.5rem;
   font-weight: 600;
   display: block;
-  padding: 8px;
-`
-
-const Row = styled.div`
-  font-size: 0.875rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
+  padding-bottom: 16px;
+  text-align: center;
 `
 
 const Attribute = styled.span`
-  font-weight: 600;
-`
-
-const Value = styled.span`
   display: block;
-`
-
-const Info = styled.div`
-  font-size: 0.875rem;
-  display: block;
+  padding: 4px 0;
+  
+  strong {
+    font-weight: 600;
+    padding-right: 4px;
+  }
 `
