@@ -57,7 +57,7 @@ export default function Peoples() {
 }
 
 
-const Container = styled.section`
+const Container = styled.div`
   max-width: 100%;
   display: flex;
   align-items: stretch;

@@ -35,6 +35,6 @@ const Header = styled.section`
   box-shadow: 0 3px 6px #00000029;
 `
 
-const Content = styled.div`
+const Content = styled.section`
   padding: 16px
 `
