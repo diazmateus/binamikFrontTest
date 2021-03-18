@@ -4,9 +4,9 @@ import styled from 'styled-components'
 export default function Pagination({onNextPage, onPreviusPage, page, totalPages}) {
   return (
     <Container>
-      <Info>Page {page} de {totalPages}</Info>
-      <Button onClick={onPreviusPage}> Previus </Button>
-      <Button onClick={onNextPage}> Next </Button>
+      <Info>Page {page} of {totalPages}</Info>
+      {page > 1 && <Button onClick={onPreviusPage}> Previus </Button>}
+      {page < totalPages && <Button onClick={onNextPage}> Next </Button>}
     </Container>
   )
 }
