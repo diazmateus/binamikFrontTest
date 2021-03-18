@@ -5,7 +5,7 @@ import Pagination from '../components/Pagination'
 import { PeopleItem } from '../components/PeopleItem'
 import styled from 'styled-components'
 
-export default function Peoples() {
+export default function People() {
   const [peoples, setPeoples] = useState([])
   const [page, setPage] = useState(1)
   const [totalPages, setTotalPages] = useState(0)
